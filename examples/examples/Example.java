@@ -1,17 +1,10 @@
-# ThreadSketch
-ThreadSketch Java Library to support learning multithreading by drawing an illustration of all active Threads and their interaction after runntime.
-# Example
-
-### ThreadSketch 
- ![picture alt](ThreadSketchExample.png "Example ThreadSketch")
-### Code
-```java
+package examples;
 
 import threadSketch.ThreadSketcher;
 import threadSketch.Thread2Sketch;
 
 /**
- * Created by Melvin S. Metzger.
+ * Created by Melvin S. Metzger on 7/3/2017.
  */
 public class Example {
 
@@ -88,4 +81,3 @@ public class Example {
 
     }
 }
-`````

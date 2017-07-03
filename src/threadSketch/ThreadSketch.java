@@ -14,6 +14,7 @@ import com.mxgraph.util.mxPoint;
 import com.mxgraph.util.mxRectangle;
 import com.mxgraph.view.mxPerimeter;
 import com.mxgraph.view.mxStylesheet;
+
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -872,7 +873,7 @@ public class ThreadSketch extends JFrame implements ActionListener {
 
         //  reportingThreadLane.setOpenWait(false);
         this.graph.getModel().endUpdate();
-
+        
     }
 
 
@@ -891,7 +892,7 @@ public class ThreadSketch extends JFrame implements ActionListener {
                 BufferedWriter bw = new BufferedWriter(new FileWriter(fileToSave, true));
 
 
-                String csvHeader = "ThreadId;name;reportReason;priority;state;isAlive;isDaemon;isInterrupted;timestamp;currentThreadId\n";
+                String csvHeader = "ThreadId,name,reportReason,priority,state,isAlive,isDaemon,isInterrupted,timestamp,currentThreadId\n";
 
                 FileWriter fileWriter = new FileWriter(fileToSave);
                 bw.write(csvHeader);

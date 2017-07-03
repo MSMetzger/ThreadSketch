@@ -8,7 +8,6 @@ package examples.simplethreads;
 
 import threadSketch.ThreadSketcher;
 import threadSketch.Thread2Sketch;
-import javax.swing.JFrame;
 
 public class SimpleThreads {
 
@@ -46,23 +45,22 @@ public class SimpleThreads {
         // thread (default one hour).
         long patience = 100 * 30;
 
-
         long startTime = System.currentTimeMillis(); 
         
-        ThreadSketcher mc = new ThreadSketcher();
+        ThreadSketcher ts = new ThreadSketcher();
 
         MessageLoopReporter rn = new MessageLoopReporter(); 
-        Thread2Sketch t = new Thread2Sketch(mc, rn);
+        Thread2Sketch t = new Thread2Sketch(ts, rn);
         t.start(); 
        
-        Thread2Sketch t1 = new Thread2Sketch(mc, rn);
+        Thread2Sketch t1 = new Thread2Sketch(ts, rn);
         t1.start();   
         
         
-        Thread2Sketch t2 = new Thread2Sketch(mc, rn); 
+        Thread2Sketch t2 = new Thread2Sketch(ts, rn); 
         t2.start();   
 
-        Thread2Sketch t3 = new Thread2Sketch(mc, rn); 
+        Thread2Sketch t3 = new Thread2Sketch(ts, rn); 
         t3.start();   
 
         
@@ -106,7 +104,7 @@ public class SimpleThreads {
             }
         } 
          
-             while (t2.isAlive()) {
+        while (t2.isAlive()) {
             Thread2Sketch.threadPost("Still waiting...\nfor thread:\n" + t2.getName());
             // Wait maximum of 1 second
             // for MessageLoop thread
@@ -123,7 +121,7 @@ public class SimpleThreads {
             }
         } 
              
-                 while (t3.isAlive()) {
+        while (t3.isAlive()) {
             Thread2Sketch.threadPost("Still waiting...\nfor thread:\n" + t3.getName());
             // Wait maximum of 1 second
             // for MessageLoop thread
@@ -143,7 +141,7 @@ public class SimpleThreads {
       
         Thread2Sketch.threadPost("Finally!");
 
-        mc.sketch();
+        ts.sketch();
         
          
         
