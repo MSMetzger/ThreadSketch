@@ -1,8 +1,11 @@
+
 # ThreadSketch
 ThreadSketch Java Library to support learning multithreading by drawing an illustration of all active Threads and their interaction after runntime.
 # Example
 In this example, we illustrate the use of ThreadSketch on [The SimpleThreads Example](https://docs.oracle.com/javase/tutorial/essential/concurrency/simple.html).
-### >a name="example-code"></a>Code 
+
+<img style="float:right;" src="ThreadSketchExample.png">
+### <a name="example-code"></a>Code 
 ```java
 
 import threadSketch.ThreadSketcher;
