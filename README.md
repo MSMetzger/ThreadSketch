@@ -1,17 +1,17 @@
 # ThreadSketch
 ThreadSketch Java Library to support learning multithreading by drawing an illustration of all active Threads and their interaction after runntime.
 # Example
-
-### ThreadSketch 
- ![picture alt](ThreadSketchExample.png "Example ThreadSketch")
-### Code
+In this example, we illustrate the use of ThreadSketch on [The SimpleThreads Example](https://docs.oracle.com/javase/tutorial/essential/concurrency/simple.html).
+### >a name="example-code"></a>Code 
 ```java
 
 import threadSketch.ThreadSketcher;
 import threadSketch.Thread2Sketch;
 
 /**
- * Created by Melvin S. Metzger.
+ * This Example implements the Simple Threads Example found here:
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/simple.html
+ * using ThreadSketch.
  */
 public class Example {
 
@@ -70,7 +70,7 @@ public class Example {
 
                 //post a custom message in ThreadSketch before interrupting
                 Thread2Sketch.threadPost("Tired of waiting...\nfor thread:\n" + t.getName());
-                t.interrupt();
+                t.inthappened();
                 // Shouldn't be long now
                 // -- wait indefinitely
                 t.join();
@@ -81,7 +81,7 @@ public class Example {
         Thread2Sketch.threadPost("Finally!");
 
 
-        //The single line of code that makes the ThreadSketcher sketch a ThreadSketch of everything that happend above
+        //The single line of code that makes the ThreadSketcher sketch a ThreadSketch of everything that happened above
         ts.sketch();
 
 
@@ -89,3 +89,6 @@ public class Example {
     }
 }
 `````
+### ThreadSketch (output)
+This ThreadSketch is the output of the [example code](#example-code) and illustrates the execution of the implemented Thread(s).
+ ![picture alt](ThreadSketchExample.png "Example ThreadSketch")
