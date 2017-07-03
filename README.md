@@ -16,7 +16,7 @@ import threadSketch.Thread2Sketch;
  * https://docs.oracle.com/javase/tutorial/essential/concurrency/simple.html
  * using ThreadSketch.
  */
-public class Example {
+public class Example { 
 
     private static class MessageLoopReporter implements Runnable {
         public void run() {
