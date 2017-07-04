@@ -72,10 +72,10 @@ _threadSketch_ is composed of 4 main classes: _Thread2Sketch_, _ThreadReport_, _
 A _Thread2Sketch_ is a Thread that reports each status change as a _ThreadReport_ to a _ThreadSketcher_.
 __After__ execution of the _Thread2Sketch_ has finished, the _ThreadSketcher_ can sketch a _ThreadSketch_ based on the _ThreadReports_ collected during runtime.
 
-If you're learning and trying to understand concurrent programming in java, you don't want to have to learn how to use a complicated library and make things even more confusing.
+If you're learning and trying to understand concurrent programming in Java, you don't want to have to learn how to use a complicated library and make things even more confusing.
 This is why _threadSketch_ is constructed in a way that allows you to code just like using common Threads in Java.
 
-There are only 3 simple points that you have to keep in mind, and one additional feature:
+There are only 3 simple points that you have to keep in mind and one additional feature:
 
 
 <a name="four-steps"></a>
@@ -92,10 +92,10 @@ To use _threadSketch_, you have to initialize a _ThreadSketcher_ __before__ star
 That's it. One simple line of code that you can paste at the top of your code.
 
 ## 2. Use Thread2Sketch instead of Thread
-_threadSketch_ is based on the concurrent programing concept of constructing [Threads](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) from [Runnables](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html). 
+_threadSketch_ is based on the concurrent programming concept of constructing [Threads](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) from [Runnables](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html). 
 
 Instead of using the [Thread](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) class, simply use the _Thread2Sketch_ class.
-This class overloads all methods from [Thread](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html), so that you can use it in the exact same way.
+This class overloads all methods from [Thread](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) so that you can use it in the exact same way.
 
 
 ##### plain Java:
@@ -114,7 +114,7 @@ This class overloads all methods from [Thread](https://docs.oracle.com/javase/8/
     t.start();    
 ```
      
-The only difference is the constructor, since you have to pass the monitoring _ThreadSketcher_.
+The only difference is the constructor. You have to pass the monitoring _ThreadSketcher_.
 
 Note that the [Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html). implementation is the same and does not require changes to be compatible with _threadSketch_.
 
