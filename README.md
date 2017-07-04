@@ -19,7 +19,7 @@ We want to help you learn concurrent programming in Java, so we will not make le
 
 _threadSketch_ is made to be as close to common concurrent programming in Java as possible.
 Code [Threads](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) and [Runnables](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html). 
-as you know them, follow [3 simple steps](four-steps) and _threadSketch_ draws a post-execution diagram that helps you understand how your code was executed.
+as you know them, follow [3 simple steps](https://github.com/MSMetzger/ThreadSketch/blob/master/README.md#1-initialize-threadsketcher) and _threadSketch_ draws a post-execution diagram that helps you understand how your code was executed.
 
 # Example 
 This is a simple HelloWorld example. For more complex examples see the [examples directory](https://github.com/MSMetzger/ThreadSketch/tree/master/examples/examples).
