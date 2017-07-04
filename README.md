@@ -8,11 +8,11 @@ __threadSketch__ supports the a learning by doing approach to congruent programm
 
 ##### You play around with congruent Java code, __threadSketch__ shows you how it executed.
 
-#### How can threadSketch help me?
+### How can threadSketch help me?
 Having troubles understanding the execution of Java code that contains multiple Threads?
 __threadSketch__ shows you exactly what the 
 
-#### Is threadSketch hard to use?
+### Is threadSketch hard to use?
 Nope!
 We want to help you learn congruent programming in Java, so we will not make learn more complicated stuff to use __threadSketch__!
 
