@@ -60,10 +60,12 @@ public class HelloWorld implements Runnable {
 To use _threadSketch_, add the [threadSketch.jar](https://github.com/MSMetzger/ThreadSketch/blob/master/lib/threadSketch.jar) file from the lib directory to your Java project.
 _threadSketch_ uses [mxGraph](https://github.com/jgraph/mxgraph) to create the illustration of the Thread(s) execution.
 
-To get started, take a look at the [code examples](https://github.com/MSMetzger/ThreadSketch/tree/master/examples/examples) and the [how to guide](#how-to) prepared for you.
 
 For _threadSketch_ to work correctly, you also need to add the [mxGraph](https://github.com/jgraph/mxgraph) library to your Java project.
 If you want to dive deeper into how _threadSketch_ works, take a look at the [source.](https://github.com/MSMetzger/ThreadSketch/tree/master/src/threadSketch)
+
+To get started, take a look at the [code examples](https://github.com/MSMetzger/ThreadSketch/tree/master/examples/examples) and the [how to guide](#how-to) prepared for you.
+
 
 # <a name="how-to"></a> How it works
 _threadSketch_ is composed of 4 main classes: _Thread2Sketch_, _ThreadReport_, _ThreadSketcher_ and _ThreadSketch_.
