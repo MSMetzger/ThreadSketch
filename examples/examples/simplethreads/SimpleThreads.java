@@ -1,10 +1,10 @@
 package examples.simplethreads;
 
 /**
- *
- * @author Melvin S. Metzger
+ * This example implements the Simple Threads Example found here:
+ * https://docs.oracle.com/javase/tutorial/essential/concurrency/simple.html
+ * using ThreadSketch and extends it by additional concurrent Threads.
  */
-
 
 import threadSketch.ThreadSketcher;
 import threadSketch.Thread2Sketch;
