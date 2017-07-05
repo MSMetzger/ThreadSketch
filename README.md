@@ -35,7 +35,7 @@ import static threadSketch.Thread2Sketch.threadPost;
 
 public class HelloWorld implements Runnable {
     public void run(){
-        threadPost(helloworld);
+        threadPost("HelloWorld");
     }
 
     public static void main(String args[]) throws InterruptedException {
