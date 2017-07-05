@@ -11,7 +11,7 @@ _threadSketch_ supports a learning by doing approach to concurrent programming:
 ### How can threadSketch help me?
 Having troubles understanding the execution of Java code that contains multiple Threads?
 
-_threadSketch_ shows you exactly what the 
+_threadSketch_ shows you exactly how your multithreading Java code executed in a simple, understandable diagram.
 
 ### Is threadSketch hard to use?
 Nope!
